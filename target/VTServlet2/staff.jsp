@@ -45,7 +45,7 @@
 <body>
 <div class="buttons">
     <a href="DemoServlet" class="button">Products</a>
-    <a href="dishes.jsp" class="button">Dishes</a>
+    <a href="DishesServlet" class="button">Dishes</a>
     <a href="orderDishes.jsp" class="button">Order Dishes</a>
     <a href="orders.jsp" class="button">Orders</a>
     <a href="receipts.jsp" class="button">Receipts</a>

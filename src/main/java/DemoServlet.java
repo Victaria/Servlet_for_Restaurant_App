@@ -10,9 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.Writer;
-import java.util.List;
 
 @WebServlet("/DemoServlet")
 
@@ -21,6 +18,7 @@ public class DemoServlet extends HttpServlet {
     private ObservableList<Products> productsList = FXCollections.observableArrayList();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        productsList.clear();
         productsList = parser.loadProductXMLFile();
         RequestDispatcher dispatcher = request.getRequestDispatcher("products.jsp");
 
@@ -41,7 +39,6 @@ public class DemoServlet extends HttpServlet {
             request.setAttribute("amount",prodAmount);
 
         }
-        request.setAttribute("str", "Hello");
             dispatcher.forward(request, response);
     }
 

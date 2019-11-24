@@ -40,16 +40,13 @@
 <body>
 <div class="buttons">
     <a href="DemoServlet" class="button selected">Products</a>
-    <a href="dishes.jsp" class="button">Dishes</a>
+    <a href="DishesServlet" class="button">Dishes</a>
     <a href="orderDishes.jsp" class="button">Order Dishes</a>
     <a href="orders.jsp" class="button">Orders</a>
     <a href="receipts.jsp" class="button">Receipts</a>
     <a href="staff.jsp" class="button">Staff</a>
 </div>
 <br>
-<c:forEach var="counter" begin="1" end="8">
-    <c:out value="${counter}"/>
-</c:forEach>
 <table>
     <tr>
         <th>ID</th>

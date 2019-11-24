@@ -23,7 +23,7 @@
 <body>
 <div class="buttons">
     <a onclick="location.href='/products'" href="DemoServlet" class="button">Products</a>
-    <a onclick="location.href='/dishes'" href="dishes.jsp" class="button">Dishes</a>
+    <a onclick="location.href='/dishes'" href="DishesServlet" class="button">Dishes</a>
     <a onclick="location.href='/orderDishes'" href="orderDishes.jsp" class="button">Order Dishes</a>
     <a onclick="location.href='/orders'" href="orders.jsp" class="button">Orders</a>
     <a onclick="location.href='/receipts'" href="receipts.jsp" class="button">Receipts</a>

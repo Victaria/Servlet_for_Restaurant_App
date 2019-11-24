@@ -1,5 +1,5 @@
-
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"  %>
+<%@ page isELIgnored="false" contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Dishes</title>
@@ -39,7 +39,7 @@
 <body>
 <div class="buttons">
     <a href="DemoServlet" class="button">Products</a>
-    <a href="dishes.jsp" class="button selected">Dishes</a>
+    <a href="DishesServlet" class="button selected">Dishes</a>
     <a href="orderDishes.jsp" class="button">Order Dishes</a>
     <a href="orders.jsp" class="button">Orders</a>
     <a href="receipts.jsp" class="button">Receipts</a>
@@ -54,13 +54,15 @@
         <th>Weight</th>
         <th>Sum</th>
     </tr>
-    <tr>
-        <td>1</td>
-        <td>Ilya</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-    </tr>
+    <c:forEach var="col" items="${col}"  >
+        <tr>
+            <td>${col.id}</td>
+            <td>${col.name}</td>
+            <td>${col.price}</td>
+            <td>${col.weight}</td>
+            <td>${col.sum}</td>
+        </tr>
+    </c:forEach>
 </table>
 </body>
 </html>
