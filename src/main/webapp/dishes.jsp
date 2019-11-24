@@ -40,8 +40,8 @@
 <div class="buttons">
     <a href="DemoServlet" class="button">Products</a>
     <a href="DishesServlet" class="button selected">Dishes</a>
-    <a href="orderDishes.jsp" class="button">Order Dishes</a>
-    <a href="orders.jsp" class="button">Orders</a>
+    <a href="OrderDishesServlet" class="button">Order Dishes</a>
+    <a href="OrdersServlet" class="button">Orders</a>
     <a href="receipts.jsp" class="button">Receipts</a>
     <a href="staff.jsp" class="button">Staff</a>
 </div>

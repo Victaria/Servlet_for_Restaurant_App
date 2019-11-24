@@ -31,6 +31,13 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1Tnz6ue00ua53323z45e9KcReoG" />
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
@@ -162,7 +169,7 @@
       <workItem from="1574497073201" duration="1860000" />
       <workItem from="1574500963380" duration="2298000" />
       <workItem from="1574529688736" duration="1023000" />
-      <workItem from="1574586018603" duration="3738000" />
+      <workItem from="1574586018603" duration="9003000" />
     </task>
     <servers />
   </component>
