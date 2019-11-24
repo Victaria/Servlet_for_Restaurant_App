@@ -42,8 +42,8 @@
     <a href="DishesServlet" class="button">Dishes</a>
     <a href="OrderDishesServlet" class="button">Order Dishes</a>
     <a href="OrdersServlet" class="button">Orders</a>
-    <a href="receipts.jsp" class="button">Receipts</a>
-    <a href="staff.jsp" class="button selected">Staff</a>
+    <a href="RecipeServlet" class="button">Receipts</a>
+    <a href="StaffServlet" class="button selected">Staff</a>
 </div>
 <br>
 <table>
@@ -51,10 +51,12 @@
         <th>ID</th>
         <th>Name</th>
     </tr>
-    <tr>
-        <td>1</td>
-        <td>Ilya</td>
-    </tr>
+    <c:forEach var="col" items="${col}"  >
+        <tr>
+            <td>${col.id}</td>
+            <td>${col.name}</td>
+        </tr>
+    </c:forEach>
 </table>
 </body>
 </html>

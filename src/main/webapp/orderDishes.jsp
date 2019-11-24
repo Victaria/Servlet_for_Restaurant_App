@@ -42,8 +42,8 @@
     <a href="DishesServlet" class="button">Dishes</a>
     <a href="OrderDishesServlet" class="button selected">Order Dishes</a>
     <a href="OrdersServlet" class="button">Orders</a>
-    <a href="receipts.jsp" class="button">Receipts</a>
-    <a href="staff.jsp" class="button">Staff</a>
+    <a href="RecipeServlet" class="button">Receipts</a>
+    <a href="StaffServlet" class="button">Staff</a>
 </div>
 <br>
 <table>

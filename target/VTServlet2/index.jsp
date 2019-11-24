@@ -26,8 +26,8 @@
     <a onclick="location.href='/dishes'" href="DishesServlet" class="button">Dishes</a>
     <a onclick="location.href='/orderDishes'" href="OrderDishesServlet" class="button">Order Dishes</a>
     <a onclick="location.href='/orders'" href="OrdersServlet" class="button">Orders</a>
-    <a onclick="location.href='/receipts'" href="receipts.jsp" class="button">Receipts</a>
-    <a onclick="location.href='/staff'" href="staff.jsp" class="button">Staff</a>
+    <a onclick="location.href='/receipts'" href="RecipeServlet" class="button">Receipts</a>
+    <a onclick="location.href='/staff'" href="StaffServlet" class="button">Staff</a>
 </div>
 </body>
 </html>
