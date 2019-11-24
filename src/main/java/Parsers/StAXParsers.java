@@ -4,6 +4,9 @@ import Entities.Recipe;
 import Entities.Staff;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
@@ -23,6 +26,8 @@ public class StAXParsers {
     private static Recipe recipe = null;
     private static ObservableList<Recipe> recipesList = FXCollections.observableArrayList();
     private static ObservableList<Staff> staffList = FXCollections.observableArrayList();
+
+    private static Logger log = LogManager.getLogger();
 
     public static ObservableList<Recipe> receiptsParse(){
         boolean id = false;
@@ -88,9 +93,9 @@ public class StAXParsers {
             }
 
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            log.log(Level.ERROR, "File not found Exception", e);
         } catch (XMLStreamException e) {
-            e.printStackTrace();
+            log.log(Level.ERROR, "XML reading Exception", e);
         }
         return recipesList;
     }
@@ -144,9 +149,9 @@ public class StAXParsers {
             }
 
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            log.log(Level.ERROR, "File not found Exception", e);
         } catch (XMLStreamException e) {
-            e.printStackTrace();
+            log.log(Level.ERROR, "XML reading Exception", e);
         }
         return staffList;
     }

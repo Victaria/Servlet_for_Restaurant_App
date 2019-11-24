@@ -5,6 +5,7 @@ import Entities.Order;
 import com.sun.org.apache.xpath.internal.operations.Or;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.xml.sax.Attributes;
@@ -91,7 +92,7 @@ public class SAXParsing {
         saxParser.parse(path + "OrderDishXML.xml" , handler);
 
     } catch (Exception e) {
-        e.printStackTrace();
+            log.log(Level.ERROR, "Exception by parsing DishFile", e);
     }
         return orderDishesList;
     }
@@ -172,7 +173,7 @@ public class SAXParsing {
             saxParser.parse(path + "OrdersXML.xml" , handler);
 
         } catch (Exception e) {
-            e.printStackTrace();
+            log.log(Level.ERROR, "Exception by parsing Order File", e);
         }
         return ordersList;
     }
